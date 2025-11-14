@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  # サービス名は自由です (例: texlive)
+  texlive:
+    # 目的のDockerイメージを指定
+    image: paperist/texlive-ja:latest
+
+    # フォルダのマウント設定
+    # ".." は「.devcontainerフォルダの1つ上の階層（=my-thesisフォルダ）」を指します
+    # それをコンテナ内の /work ディレクトリに割り当てます
+    volumes:
+      - ..:/work:cached
+
+    # コンテナ内での作業ディレクトリを指定
+    working_dir: /work
+
+    # Dev Containerが終了しないように、コンテナを起動し続ける
+    command: sleep infinity

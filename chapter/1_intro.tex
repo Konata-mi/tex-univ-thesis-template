@@ -1,0 +1,27 @@
+%!TEX root = ../Thesis.tex
+%!TEX program = xelatex
+\documentclass[../Thesis]{subfiles}
+
+% 本文
+\begin{document}
+\chapter{はじめに}
+\label{cha:はじめに}
+本文テスト
+〇〇大学の教員の例を\ref{fig:YG}に示す．
+\section{背景}
+  \label{sec:背景}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=\linewidth/2]{yg.png}
+    \caption{画像テスト}
+    \label{fig:YG}
+  \end{figure}
+  \par
+\section{本論文の構成}
+  \label{sec:本論文の構成}
+  本論文の構成を以下に示す. \par
+  第\ref{cha:はじめに}章では本研究の背景，関連研究，及び目的について述べた．\par
+  第\ref{cha:手法}章では本研究の提案手法について述べる．\par
+  第\ref{cha:実験}章では実験方法及び実験結果について述べる．\par
+  第\ref{cha:まとめ}章ではまとめとして結論及び今後の課題について述べる．
+\end{document}

@@ -1,0 +1,19 @@
+# LaTeX compiled files
+*.pdf
+*.log
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.out
+*.synctex
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+
+# OS files
+.DS_Store
+Thumbs.db
